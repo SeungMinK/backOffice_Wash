@@ -6,3 +6,4 @@ lock.json
 .json
 .cmd
 .lock
+*.log
