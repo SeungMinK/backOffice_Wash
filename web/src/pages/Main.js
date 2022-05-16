@@ -27,17 +27,123 @@ function Main() {
               marginTop: 64,
             }}
           >
-            <div
-              className="site-layout-background"
-              style={{
-                padding: 24,
-              }}
-            >
-              <div>
-                <span>카테고리1</span>
-                <span>카테고리2</span>
-                <span>카테고리3</span>
+            <div className="site-layout-background">
+              {/* 임시 데이터 */}
+              <div className="categories-wrap">
+                <div className="content-title-wrap">
+                  <center className="content-title-text">잠겨있는 주문 </center>
+                  <div className="content-count-wrap">
+                    <center className="content-count-text">1</center>
+                  </div>
+                </div>
+
+                <div className="content-order-wrap">
+                  <div className="content-order-text-wrap">
+                    <center className="content-order-text">YJA352CB0302927</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                </div>
               </div>
+              {/* ===========*/}
+
+              {/* 임시 데이터 */}
+              <div className="categories-wrap">
+                <div className="content-title-wrap">
+                  <center className="content-title-text">아이템 생성 안됨 </center>
+                  <div className="content-count-wrap">
+                    <center className="content-count-text">558</center>
+                  </div>
+                </div>
+
+                <div className="content-order-wrap">
+                  <div className="content-order-text-wrap">
+                    <center className="content-order-text">YJA352CB0302927</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                </div>
+
+                <div className="content-order-wrap">
+                  <div className="content-order-text-wrap">
+                    <center className="content-order-text">YJA352CB0302927</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                </div>
+
+                <div className="content-order-wrap">
+                  <div className="content-order-text-wrap">
+                    <center className="content-order-text">YJA352CB0302927</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                </div>
+              </div>
+              {/* ===========*/}
+
+              {/* 임시 데이터 */}
+              <div className="categories-wrap">
+                <div className="content-title-wrap">
+                  <center className="content-title-text">가격 설정 안됨 </center>
+                  <div className="content-count-wrap">
+                    <center className="content-count-text">558</center>
+                  </div>
+                </div>
+
+                <div className="content-order-wrap">
+                  <div className="content-order-text-wrap">
+                    <center className="content-order-text">YJA352CB0302927</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                  <div className="content-item-wrap">
+                    <center className="content-item-text">46-0-330</center>
+                  </div>
+                </div>
+              </div>
+              {/* ===========*/}
             </div>
           </Content>
           <Footer
