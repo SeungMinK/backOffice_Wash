@@ -1,4 +1,57 @@
 .site-layout-background {
-  min-height: 360px;
+  padding: 24px;
+  display: flex;
+  min-height: fit-content;
   height: 1440px;
+}
+
+.categories-wrap {
+  height: fit-content;
+  width: 200px;
+  height: fit-content;
+  margin-left: 2%;
+}
+.content-title-wrap {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 2px;
+}
+.content-title-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.content-count-wrap {
+  background-color: rgb(214, 214, 214);
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+.content-count-text {
+  font-size: 15px;
+}
+
+.content-order-wrap {
+  background-color: white;
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+.content-order-text-wrap {
+  background-color: rgb(49, 18, 224);
+  padding: 10px;
+  margin: 0px 10px;
+}
+.content-order-text {
+  color: white;
+}
+.content-order-text {
+  font-size: 13px;
+}
+.content-item-wrap {
+  background-color: rgb(214, 214, 214);
+  border-radius: 10px;
+  margin: 10px 5px;
+}
+.content-item-text {
+  font-size: 13px;
 }
