@@ -51,6 +51,12 @@ app.use(helmet.xssFilter()); // XSS(교차 사이트 스크립팅) 방어
 app.use(helmet.frameguard("deny")); // 클릭재킹으로 부터 보호(deny:프레임 내에 우리 사이트를 넣지 못하게 함)
 app.use(cors()); //cors 에러 해결
 
+/*Router 선언*/
+const main = require("./routes/main");
+
+/*URl 매칭*/
+app.use("/api/main", main);
+
 /*WAS 서버 오픈 port*/
 const port = 8081;
 if (process.env.MODE === "RELEASE") {
