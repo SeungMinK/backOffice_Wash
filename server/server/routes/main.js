@@ -5,7 +5,7 @@ const getConnection = require("../../lib/db");
 const logger = require("../../public/js/logger");
 const exec_sql = require("../../public/js/exec_sql");
 
-router.get("/test", function (req, res) {
+router.post("/test", function (req, res) {
   const selectQuery = `select * from TBL_CATEGORY`;
   getConnection((connection) => {
     exec_sql(connection, selectQuery)
