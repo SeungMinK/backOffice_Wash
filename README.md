@@ -3,6 +3,6 @@
 [Show Wep App](http://61.79.180.195)
 
 
-## DB _ Table
+## DB_Table
 
-https://user-images.githubusercontent.com/20696473/168727730-d97cda32-07aa-4f83-b0bb-a1438fcaabca.jpg
+[DB_TABLE](https://user-images.githubusercontent.com/20696473/168727730-d97cda32-07aa-4f83-b0bb-a1438fcaabca.jpg)
