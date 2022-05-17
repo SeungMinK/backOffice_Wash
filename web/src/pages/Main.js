@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "antd/dist/antd.min.css";
 import "../css/main.css";
 import { Layout, Menu, Breadcrumb } from "antd";
+import axios from "axios";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
+  /*서버 주소 */
+  const API_HOST = process.env.REACT_APP_API_HOST;
+
+  /*Login MSA를 통해 발급 받은 ACCESS_TOKEN(ENV로 대체)*/
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: `Bearer ${process.env.REACT_APP_ACCESS_TOKEN}`,
+  };
+
+  const [washData, setWashData] = useState();
+
+  /*데이터 조회*/
+  const onDataHandler = () => {
+    axios
+      .post(`${API_HOST}/api/main/test`, [], { headers })
+      .then((response) => {
+        setWashData(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    onDataHandler();
+  }, []);
   return (
     <>
       <>
