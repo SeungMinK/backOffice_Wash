@@ -12,19 +12,25 @@ router.post("/inquiry", function (req, res) {
   const accessToken = req.headers.authorization.split(" ")[1];
 
   if (accessToken === ACCESS_TOKEN) {
-    const selectQuery = `select * from TBL_CATEGORY`;
+    const selectDataQuery = `
+        select c.CGR_NM,c.CGR_ID,o.ORDER_ID,i.ITEM_ID  from TBL_CATEGORY c 
+        LEFT JOIN TBL_ORDER o ON c.CGR_ID = o.CGR_ID 
+        LEFT JOIN TBL_ITEM i ON o.ORDER_ID  = i.ORDER_ID
+        `;
+    const selectOrderQuery = `select * from TBL_ORDER`;
+    const selectItemQuery = `select * from TBL_ITEM`;
     getConnection((connection) => {
-      exec_sql(connection, selectQuery)
-        .then((response) => {
-          if (response[0]) res.status(200).send(response);
-          else res.status(400).send(response);
-        })
-        .catch((err) => {
+      (async () => {
+        try {
+          const inquiryData = await exec_sql(connection, selectDataQuery);
+          if (inquiryData) res.status(200).send(inquiryData);
+          else res.status(400).send(false);
+        } catch (err) {
           console.log(err);
-        })
-        .finally(() => {
+        } finally {
           connection.release();
-        });
+        }
+      })();
     });
   } else {
     res.status(401).send(false);
