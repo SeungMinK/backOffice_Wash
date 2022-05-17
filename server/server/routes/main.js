@@ -17,8 +17,7 @@ router.post("/inquiry", function (req, res) {
         LEFT JOIN TBL_ORDER o ON c.CGR_ID = o.CGR_ID 
         LEFT JOIN TBL_ITEM i ON o.ORDER_ID  = i.ORDER_ID
         `;
-    const selectOrderQuery = `select * from TBL_ORDER`;
-    const selectItemQuery = `select * from TBL_ITEM`;
+
     getConnection((connection) => {
       (async () => {
         try {
