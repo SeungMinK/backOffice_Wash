@@ -5,7 +5,7 @@
 
 ## DB_Table
 
-![DB_TABLE](https://user-images.githubusercontent.com/20696473/168727730-d97cda32-07aa-4f83-b0bb-a1438fcaabca.jpg)
+![DB_TABLE](https://user-images.githubusercontent.com/20696473/168809147-06f61594-3de9-463b-911c-504e1cae01ac.png)
 
 
 ## Skiles
