@@ -103,7 +103,7 @@ function Main() {
   return (
     <>
       <>
-        <Layout>
+        <Layout className="layout">
           <Header
             style={{
               position: "fixed",
@@ -120,20 +120,12 @@ function Main() {
             style={{
               padding: "0 50px",
               marginTop: 64,
+              backgroundColor: "white",
+              marginRight: "50px",
             }}
           >
             <div className="site-layout-background">{washData ? categoriesViewHandler() : null}</div>
           </Content>
-          <Footer
-            style={{
-              textAlign: "center",
-            }}
-          >
-            <div>
-              <p>세탁 특공대 과제 전형 김승민</p>
-              <p>Ant Design ©2018 Created by Ant UED</p>
-            </div>
-          </Footer>
         </Layout>
       </>
     </>

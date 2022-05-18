@@ -1,7 +1,13 @@
+.layout {
+  align-items: flex-start;
+}
+
 .site-layout-background {
   padding: 24px;
   display: flex;
+  width: fit-content;
   min-height: fit-content;
+  max-width: fit-content;
   height: 1440px;
 }
 
@@ -9,7 +15,9 @@
   height: fit-content;
   width: 200px;
   height: fit-content;
-  margin-left: 2%;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-style: solid;
 }
 .content-title-wrap {
   padding: 10px;
@@ -34,6 +42,7 @@
   background-color: white;
   margin: 10px 5px;
   padding: 10px;
+  border-style: solid;
 }
 
 .content-order-text-wrap {
