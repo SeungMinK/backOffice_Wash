@@ -7,7 +7,7 @@
 
 ![DB_TABLE](https://user-images.githubusercontent.com/20696473/168809147-06f61594-3de9-463b-911c-504e1cae01ac.png)
 
-###SQL
+## DB_CREATE_SQL
 ```
 CREATE TABLE `TBL_CATEGORY` (
   `CGR_ID` varchar(20) NOT NULL COMMENT '카테고리 ID',
