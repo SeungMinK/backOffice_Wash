@@ -7,7 +7,8 @@
 
 ![DB_TABLE](https://user-images.githubusercontent.com/20696473/168809147-06f61594-3de9-463b-911c-504e1cae01ac.png)
 
-
+###SQL
+```
 CREATE TABLE `TBL_CATEGORY` (
   `CGR_ID` varchar(20) NOT NULL COMMENT '카테고리 ID',
   `CGR_NM` varchar(1000) DEFAULT NULL COMMENT '카테고리명',
@@ -44,7 +45,7 @@ CREATE TABLE `TBL_ITEM` (
   KEY `ORDER_ID` (`ORDER_ID`),
   CONSTRAINT `tbl_item_ibfk_1` FOREIGN KEY (`ORDER_ID`) REFERENCES `TBL_ORDER` (`ORDER_ID`)
 )
-
+```
 
 ## Skiles
 
